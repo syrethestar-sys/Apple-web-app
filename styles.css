@@ -58,6 +58,7 @@ header {
 
 
 
+
 /* MAIN TEXT */
 .maincontainer {
     position: absolute;
@@ -148,89 +149,221 @@ header {
 }
 /* MAIN TEXT END */
 
+#limiter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 /* <!-- 3 BIG PICTURES START --> */
 #container {
-    position: relative;
-    top: 96px;
-    width: 100vw;
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    width: 1920px;
     height: 2100px;
+    gap: 12px;
 }
-.piccontainer{
-    position: absolute;
-    width: 100vw;
+.piccontainer {
+    width: 1920px;
     height: 692px;
 }
-#mainpicture {  /* 1st picture */
-    width: 100vw;
-    height: 692px;
+#mainpicture {
     background-image: url(./pictures/iphone16pro.jpg);
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
 }
-#mainpicture2 {  /* 2nd picture */
-    width: 100vw;
-    height: 692px;
-    top: 704px;
+#mainpicture2 {
     background-image: url(./pictures/iphone16.png);
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 0;
+    background-size: cover;
+}
+.maincontainer#secondpic{
+    top: 55px;
 }
 .lmbutton#lmsec{
     background-color: white;
 }
-#hoyrdohlearn.buttontext{
-    color: black;
-    font-weight: 400;
-}
-#secondpic.maincontainer {
-    top: 55px;
-}
 .buybutton#buysec{
     border: 1px white solid;
+}
+.buttontext2#hoyrdohbuy {
     color: white;
     font-weight: 300;
 }
 #mainpicture3 {
-    width: 100vw;
-    height: 692px;
-    top: 1408px;
-    background-image: url(./pictures/gift.png);
-    background-size: cover;
+    background-image: url(./pictures/Gift.png);
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 0;
+    background-size: cover;
 }
-#thirdpic.maincontainer {
-    top:446px;
-    width: 405px;
-    height: 164px;
+.maincontainer#thirdpic {
+    top: 446px;
 }
-.maintextcontainer#gap{
-    gap: 12px;
-}
-.heading#headgift {
+.heading#headgift{
     color: black;
 }
-.subtext#subgift {
+.subtext#subgift{
     color: black;
 }
-.buttonwidth#buttons{
-    width: 123px;
+.buttonwidth#buttons {
+    width: 114px;
 }
-.buttontext#shopgift{
-    color: white;
-    font-weight: 300;
+.buttontext#shopgift {
+    color:white;
 }
-
-
-
-
 /* <!-- 3 BIG PICTURES START --> */
 
 
+
+
+
+
+
+/* Products */
+.container{
+    margin-top: 12px;
+    height: 1764px;
+    width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+.holder {
+    width: 942px;
+    height: 580px;
+}
+#ipad {
+    background-image: url(./pictures/ipadairbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#airpod {
+    background-image: url(./pictures/airpod.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#watch {
+    background-image: url(./pictures/iwatch.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#macbook {
+    background-image: url(./pictures/macbookair.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#trade {
+    background-image: url(./pictures/tradein.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#card {
+    background-image: url(./pictures/card.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Products end */
+
+
+
+/* SCROLL */
+.container#scroll {
+    width: 3782px;
+    height: 668px;
+    gap: 16px;
+}
+.poster{
+    width: 1250px;
+    height: 668px;
+}
+#left {
+    background-image: url(./pictures/mer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#middle {
+    background-image: url(./pictures/fly.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#right {
+    background-image: url(./pictures/sh.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 220px;
+    height: 8px;
+    margin-top: 12px;
+    gap: 14px;
+}
+.tabs {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #0000006B;
+}
+/* SCROLL */
+
+
+
+
+
+/* FOOTER */
+#footerholder {
+    width: 1920px;
+    height: 292px;
+}
+#service {
+    display: flex;
+    flex-direction: row;
+    width: 1920px;
+    height: 236px;
+    gap: 16px;
+    margin-top: 12px;
+}
+.service{
+    width: 417px;
+    height: 292px;
+}
+#neg {
+    background-image: url(./pictures/1st.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hoyr {
+    background-color: #1B2632;
+}
+#guraw {
+    background-image: url(./pictures/2k25.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#duruw {
+    background-image: url(./pictures/gym.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#taw{
+    background-color: #EBB799;
+}
+/* FOOTER */

@@ -12,7 +12,7 @@ header {
     position: fixed;
     width: 100vw;
     height: 44px;
-    background-color: #F5F5F7CC;
+    background-color: #f5f5f7ea;
     border-radius: 2px solid;
     top: 8px;
     gap: 24px;
@@ -20,6 +20,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 }
 #logocontainer {
     width: 30px;
@@ -57,21 +58,179 @@ header {
 
 
 
-/* Main text */
-#maincontainer {
+/* MAIN TEXT */
+.maincontainer {
     position: absolute;
     width: 405px;
     height: 172px;
-    border: 1px solid;
     top: 151px;
-    left: 920px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 #maintextcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 405px;
     height: 108px;
+    top: 0px;
+    gap: 16px;
+}
+.heading {
+    width: 405px;
+    height: 60px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    font-style: normal ;
+    color: #F5F5F7;
+}
+.subtext{
+    width: 405px;
+    height: 32px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    font-style: normal;
+    color: #F5F5F7;
 }
 #buttons {
+    position: absolute;
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    bottom: 0px;
     width: 207px;
     height: 44px;
 }
+.lmbutton {
+    width: 123px;
+    height: 44px;
+    background-color: #0071E3;
+    border-radius: 999px;
+}
+#ehniilearn.buttontext{
+    font-weight: 300;
+    font-size: 16px;
+    color: #F5F5F7;
+}
+.buttontext {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.buybutton {
+    width: 68px;
+    height: 44px;
+    border: 1px #2997FF solid;
+    border-radius: 999px;
+}
+#ehniibuy.buttontext2{
+    font-weight: 300;
+    font-size: 16px;
+    color: #2997FF;
+}
+.buttontext2 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+/* MAIN TEXT END */
+
+
+
+/* <!-- 3 BIG PICTURES START --> */
+#container {
+    position: relative;
+    top: 96px;
+    width: 100vw;
+    height: 2100px;
+}
+.piccontainer{
+    position: absolute;
+    width: 100vw;
+    height: 692px;
+}
+#mainpicture {  /* 1st picture */
+    width: 100vw;
+    height: 692px;
+    background-image: url(./pictures/iphone16pro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+#mainpicture2 {  /* 2nd picture */
+    width: 100vw;
+    height: 692px;
+    top: 704px;
+    background-image: url(./pictures/iphone16.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.lmbutton#lmsec{
+    background-color: white;
+}
+#hoyrdohlearn.buttontext{
+    color: black;
+    font-weight: 400;
+}
+#secondpic.maincontainer {
+    top: 55px;
+}
+.buybutton#buysec{
+    border: 1px white solid;
+    color: white;
+    font-weight: 300;
+}
+#mainpicture3 {
+    width: 100vw;
+    height: 692px;
+    top: 1408px;
+    background-image: url(./pictures/gift.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+#thirdpic.maincontainer {
+    top:446px;
+    width: 405px;
+    height: 164px;
+}
+.maintextcontainer#gap{
+    gap: 12px;
+}
+.heading#headgift {
+    color: black;
+}
+.subtext#subgift {
+    color: black;
+}
+.buttonwidth#buttons{
+    width: 123px;
+}
+.buttontext#shopgift{
+    color: white;
+    font-weight: 300;
+}
+
+
+
+
+/* <!-- 3 BIG PICTURES START --> */
+
+

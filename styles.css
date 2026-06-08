@@ -162,12 +162,12 @@ header {
     margin-top: 96px;
     display: flex;
     flex-direction: column;
-    width: 1920px;
+    width: 100vw;
     height: 2100px;
     gap: 12px;
 }
 .piccontainer {
-    width: 1920px;
+    width: 100vw;
     height: 692px;
 }
 #mainpicture {
@@ -228,8 +228,7 @@ header {
     grid-template-columns: repeat(2, 1fr); 
     gap: 12px;                            
     padding: 12px;
-    width: 100%;
-    max-width: 1920px;                     
+    width: 100vw;                     
     margin: 0 auto;                        
 }
 .holder {
@@ -245,7 +244,6 @@ header {
     background-size: cover;
 }
 .buttonsproduct{
-    position: absolute;
     display: flex;
     gap: 16px;
     position: absolute;
@@ -295,12 +293,20 @@ header {
 .titles-holder{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .lm-btn-text {
     color: white;
 }
 .buy-btn-text {
     color: #2997FF;
+}
+.title-btn-holder{
+    border: 1px white solid;
+}
+.learn-more-btn#gye {
+    width: 167px;
 }
 #ipad {
     background-image: url(./pictures/ipadairbg.png);
@@ -331,16 +337,122 @@ header {
 }
 #airpod {
     background-image: url(./pictures/airpod.png);
+    position: relative;
 }
-.title#airpod-text {
+
+.title-btn-holder {
+    border: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 58px;
+}
+.airpods-text {
+    font-family: "inter",sans-serif;
+    color: white;
     font-size: 36px;
+    font-weight: 600;
+}
+.airpods-subtext {
+    font-family: "inter",sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+.btn-holder {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+.learn-more-btn {
+    background-color: #0071E3;
+    width: 115px;
+    height: 40px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.learn-more {
+    font-family: "inter",sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+.buy-btn {
+    width: 68px;
+    height: 40px;
+    border: 1px #0071E3 solid;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.buy-btn:hover .buy{
+    transform: scale(5px);
+    transition: 0.2s ease-in-out;
+    background-color: #0071E3;
+    width: 68px;
+    height: 40px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
+.buy {
+    font-family: "inter",sans-serif;
+    color: #2997FF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 #watch {
     background-image: url(./pictures/iwatch.png);
 }
+.title-btn-holder#watch-title{
+    display: block;
+    top: 58px;
+}
+.logo-holder {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.product-title {
+    font-family: "inter",sans-serif;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: bold;
+}
+#series{
+    font-family: "inter",sans-serif;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 4px;
+    letter-spacing: 2px;
+    line-height: 100%;
+}
+.product-subtext{
+    font-family: "inter",sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 4px;
+    line-height: 25px;
+}
 #macbook {
     background-image: url(./pictures/macbookair.png);
+}
+#space {
+    width: 322px;
+    height: 50px;
 }
 #trade {
     background-image: url(./pictures/tradein.png);
@@ -348,24 +460,80 @@ header {
 #card {
     background-image: url(./pictures/card.png);
 }
+.buy-btn#apply-now {
+    width: 112px;
+}
+.buy-btn:hover .apply{
+    transform: scale(5px);
+    transition: 0.2s ease-in-out;
+    background-color: #0071E3;
+    width: 112px;
+    height: 40px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
 /* Products end */
 
 
 
 /* SCROLL */
-.container#scroll {
-    width: 3782px;
+.scroll-container {
+    width: 100vw;
     height: 668px;
     gap: 16px;
+    margin-top: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+
 }
 .poster{
     width: 1250px;
     height: 668px;
+    flex: 0 0 auto;
+    position: relative;
+}
+.learn-more-btn#stream-now {
+    width: 133px;
+    height: 44px;
+    background-color: #F5F5F7;
+    transform: .2s;
+}
+.stream {
+    color: #000000;
+}
+.movie-btn-holder {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    left: 70px;
+    bottom: 58px;
+}
+.learn-more-btn#stream-now:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.05);
+    background-color: white;
+    box-shadow: 1px 1px 40px rgba(15, 15, 15, 0.279);
+}
+.movie-title {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.668);
+}
+.movie-subtext {
+    font-weight: 400;
 }
 #left {
     background-image: url(./pictures/mer.png);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 #middle {
@@ -375,25 +543,23 @@ header {
     background-size: cover;
 }
 #right {
+    width: 1250px;
+    height: 668px;
     background-image: url(./pictures/sh.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-#scroll {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 220px;
-    height: 8px;
-    margin-top: 12px;
-    gap: 14px;
 }
 .tabs {
     width: 8px;
     height: 8px;
     border-radius: 4px;
     background-color: #0000006B;
+}
+#scroll {
+    display: flex;
+    gap: 14px;
+    margin-top: 12px;
 }
 /* SCROLL */
 
@@ -403,20 +569,30 @@ header {
 
 /* FOOTER */
 #footerholder {
-    width: 1920px;
+    width: 100vw;
     height: 292px;
+    gap: 16px;
+    margin-top: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 #service {
     display: flex;
     flex-direction: row;
-    width: 1920px;
+    width: 100vw;
     height: 236px;
     gap: 16px;
     margin-top: 12px;
 }
 .service{
+    position: relative;
+    flex: 0 0 auto;
     width: 417px;
-    height: 292px;
+    height: 236px;
 }
 #neg {
     background-image: url(./pictures/1st.jpg);
@@ -424,8 +600,46 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.service#neg {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.service-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.footer-title {
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+.footer-logo {
+    width: 78px;
+    height: 14px;
+    background-image: url(./pictures/fitness.png);
+    background-size: cover;
+}
+
 #hoyr {
+    position: relative;
     background-color: #1B2632;
+}
+.rb-cover {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 196px;
+    height: 196px;
+    background-size: cover;
+    background-image: url(./pictures/r&b.jpg);
 }
 #guraw {
     background-image: url(./pictures/2k25.jpg);
@@ -442,4 +656,4 @@ header {
 #taw{
     background-color: #EBB799;
 }
-/* FOOTER */
+/* FOOTER */ 

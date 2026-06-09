@@ -64,6 +64,9 @@
         flex-direction: column;
 
     }
+    .holder.hidden#carrier{
+        display: flex;
+    }
     .product-subtext#space {
         gap: 0px;
     }
@@ -112,11 +115,84 @@
         font-size: 30px;
     }
     .title-btn-holder#carrier-title{
-    width: 314px;
-    height: 152px;
-    display: block;
-    bottom: 42px;
-}
+        width: 314px;
+        height: 152px;
+        display: block;
+        bottom: 42px;
+    }
+
+
+
+
+    /* MOVIE SCROLL */
+    .scroll-container {
+        height: 368px;
+    }
+    .poster{
+        width: 689px;
+        height: 368px;
+        flex: 0 0 auto;
+        position: relative;
+    }
+
+
+
+    
+    /* FOOTER */
+    #footerholder {
+        display: none;
+    }
+    
+    #footer-tab {
+        width: 100vw;
+        height: 262px;
+        overflow: scroll;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #footerholder::-webkit-scrollbar{
+    display: none;
+    }
+    #footer-tab {
+        display: flex;
+    }
+    #service {
+        width: 100vw;
+        height: 194px;
+        display: flex;
+        flex-direction: row;
+    }
+    .service-holder {
+        width: 286px;
+        height: 194px;
+        flex: 0 0 auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .service-pic {
+        width: 286px;
+        height: 161px;
+    }
+    #music-bg {
+        background-color: #6529CF;
+    }
+    .footer-text-style {
+        font-family: "inter", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -0.22px;
+    }
+    #fitness-bg {
+        background-color: #2A402D;
+    }
+    #arcade-bg {
+        background-color: #040303;
+    }
+
+
+
 
 
 }

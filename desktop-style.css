@@ -241,6 +241,9 @@ header {
 .maincontainer#thirdpic {
     top: 446px;
 }
+.scroll-phone {
+    display: none;
+}
 .heading#headgift{
     color: black;
 }

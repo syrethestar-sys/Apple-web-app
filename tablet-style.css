@@ -1,198 +1,248 @@
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* HEADER */
-    #apple-logo {
-        margin-left: 15px;
-    }
-    #header {
-        justify-content: space-between;
-    }
-    .nav-text {
-        display: none;
-    }
-    #menu {
-        display: flex;
-        margin-right: 15px;
-    }
-
-
-
-
-    /* MAIN  */
-    .piccontainer {
-        height: 650px;
-    }
-    #mainpicture {
-        background-size: cover;
-        background-image: url(./pictures/iphone-16-pro-tab.png);
-    }
-    #mainpicture2 {
-        background-size: cover;
-        background-image: url(./pictures/iphone-16-tab.png);
-    }
-    #container {
-        height: 1974px;
-        .piccontainer#mainpicture3 {
-        display: none;
-    }
-    }
-
-    .piccontainer#ipad-hidden {
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-    
-    }
-
-
-
-
-    /* PRODUCT */
-    .container {
-        margin-top: 12px;
-        margin-left: 12px;
-        margin-right: 12px;
-    }
-    .holder#business {
-        display: flex;
-    }
-    .holder#ipad {
-        display: none;
-    }
-    .logo-holder#bus {
-        gap: 0px;
-        flex-direction: column;
-
-    }
-    .holder.hidden#carrier{
-        display: flex;
-    }
-    .product-subtext#space {
-        gap: 0px;
-    }
-    .product-subtext.space#space {
-        height: 18px;
-    }
-    #business {
-        background-image: url(./pictures/small-business.png);
-    }
-    .holder#trade{
-        display: none;
-    }
-    .airpods-subtext {
-        margin-top: 4px;
-        margin-bottom: 6px;
-    }
-    #airpod {
-        background-image: url(./pictures/airpod-tab.png);
-    }
-    #watch {
-        background-size: cover;
-        background-image: url(./pictures/watch-tab.png);
-    }
-    .holder.hidden#trade{
-    display: flex;
-    }
-    .holder#card {
-        display: none;
-    }
-    .learn-more-btn#deal {
-        width: 126px;
-    }
-    .btn-holder.solo {
-        margin-top: 20px;
-    }
-    .learn-more-btn#solo {
-        width: 107px;
-    }
-    .learn-more {
-        font-size: 14px;
-    }
-    #carrier {
-        background-image: url(./pictures/carrier.png);
-    }
-    .product-title {
-        font-size: 30px;
-    }
-    .title-btn-holder#carrier-title{
-        width: 314px;
-        height: 152px;
-        display: block;
-        bottom: 42px;
-    }
-
-
-
-
-    /* MOVIE SCROLL */
-    .scroll-container {
-        height: 368px;
-    }
-    .poster{
-        width: 689px;
-        height: 368px;
-        flex: 0 0 auto;
-        position: relative;
-    }
-
-
-
-    
-    /* FOOTER */
-    #footerholder {
-        display: none;
-    }
-    
-    #footer-tab {
-        width: 100vw;
-        height: 262px;
-        overflow: scroll;
-        overflow-x: auto;
-        overflow-y: hidden;
-    }
-    #footerholder::-webkit-scrollbar{
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+  /* HEADER */
+  #apple-logo {
+    margin-left: 15px;
+  }
+  #header {
+    justify-content: space-between;
+  }
+  .nav-text {
     display: none;
-    }
-    #footer-tab {
-        display: flex;
-    }
-    #service {
-        width: 100vw;
-        height: 194px;
-        display: flex;
-        flex-direction: row;
-    }
-    .service-holder {
-        width: 286px;
-        height: 194px;
-        flex: 0 0 auto;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .service-pic {
-        width: 286px;
-        height: 161px;
-    }
-    #music-bg {
-        background-color: #6529CF;
-    }
-    .footer-text-style {
-        font-family: "inter", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: -0.22px;
-    }
-    #fitness-bg {
-        background-color: #2A402D;
-    }
-    #arcade-bg {
-        background-color: #040303;
-    }
+  }
+  #menu {
+    display: flex;
+    margin-right: 15px;
+  }
+  .logocontainer {
+    width: 48px;
+    height: 48px;
+  }
+
+.menu-icon {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    background-image: url(./pictures/menu.png);
+    border: none;
+    background-color: #f5f5f7;
+  }
+.menu-checkbox {
+  display: none;
+}
+.back-button {
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-self: flex-end; /* Keeps it aligned to the left */
+}
+.menu-dropdown {
+    font-weight: 500;
+    font-family: "inter",sans-serif;
+    font-size: 28px;
+    padding-left: 48px;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+    gap: 13px;
+    margin-top: 3px;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f7;
+    transition: all 0.1s ease;
+}
+.menu-checkbox:checked ~ .menu-dropdown {
+  display: flex;
+}
 
 
 
+  /* MAIN  */
+  .piccontainer {
+    height: 650px;
+  }
+  #mainpicture {
+    background-size: cover;
+    background-image: url(./pictures/iphone-16-pro-tab.png);
+  }
+  #mainpicture2 {
+    background-size: cover;
+    background-image: url(./pictures/iphone-16-tab.png);
+  }
+  #container {
+    height: 1974px;
+    .piccontainer#mainpicture3 {
+      display: none;
+    }
+  }
 
+  .piccontainer#ipad-hidden {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* PRODUCT */
+  .container {
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .holder#business {
+    display: flex;
+  }
+  .holder#ipad {
+    display: none;
+  }
+  .logo-holder#bus {
+    gap: 0px;
+    flex-direction: column;
+  }
+  .holder.hidden#carrier {
+    display: flex;
+  }
+  .product-subtext#space {
+    gap: 0px;
+  }
+  .subtext-container{
+    width: 257px;
+    height: 60px;
+  }
+  .product-subtext.space#space {
+    width: 257px;
+  }
+  #business {
+    background-image: url(./pictures/small-business.png);
+  }
+  .holder#trade {
+    display: none;
+  }
+  .airpods-subtext {
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+  #airpod {
+    background-image: url(./pictures/airpod-tab.png);
+  }
+  #watch {
+    background-size: cover;
+    background-image: url(./pictures/watch-tab.png);
+  }
+  .holder.hidden#trade {
+    display: flex;
+  }
+  .holder#card {
+    display: none;
+  }
+  .learn-more-btn#deal {
+    width: 126px;
+  }
+  .btn-holder.solo {
+    margin-top: 20px;
+  }
+  .learn-more-btn#solo {
+    width: 107px;
+  }
+  .learn-more {
+    font-size: 14px;
+  }
+  #carrier {
+    background-image: url(./pictures/carrier.png);
+  }
+  .product-title {
+    font-size: 30px;
+  }
+  .title-btn-holder#carrier-title {
+    width: 314px;
+    height: 152px;
+    display: block;
+    bottom: 42px;
+  }
+
+  /* MOVIE SCROLL */
+  .scroll-container {
+    height: 368px;
+  }
+  .poster {
+    width: 689px;
+    height: 368px;
+    flex: 0 0 auto;
+    position: relative;
+  }
+
+  /* FOOTER */
+  #footerholder {
+    display: none;
+  }
+
+  #footer-tab {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 262px;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  #service::-webkit-scrollbar {
+    display: none;
+  }
+
+  #service {
+    width: 100vw;
+    height: 194px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .service-holder {
+    width: 286px;
+    height: 194px;
+    flex: 0 0 auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .service-pic {
+    width: 286px;
+    height: 161px;
+  }
+  #music-bg {
+    background-color: #6529cf;
+  }
+  .footer-text-style {
+    font-family: "inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.22px;
+  }
+  #fitness-bg {
+    background-color: #2a402d;
+  }
+  #arcade-bg {
+    background-color: #040303;
+  }
+
+  .foot-of-foot {
+    width: 90%;
+  }
+  
 
 }

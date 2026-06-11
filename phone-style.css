@@ -72,18 +72,19 @@
 
   /* MAIN  */
   .maincontainer {
-    position: absolute;
     width: 241px;
     height: 114px;
-    top: 410px;
-    left: 50%;
-    transform: translate(-50%, 0%);
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
+#mainpicture {
+  background-image: none;
+  background: url(./pictures/iphone-16-pro-phone.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .heading {
     height: 36px;
     font-size: 30px;
@@ -114,12 +115,11 @@
 .buttontext2#ehniibuy {
     font-size: 14px;
 }
-  .piccontainer {
+  .piccontainer#mainpicture {
     height: 500px;
-  }
-  #mainpicture {
-    background-size: cover;
-    background-image: url(./pictures/iphone-16-pro-phone.png);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   #mainpicture2 {
     background-size: cover;
@@ -193,17 +193,16 @@
 }
   #container {
     height: 1546px;
-    .piccontainer#mainpicture3 {
-      display: none;
     }
-  }
 
-  .piccontainer#ipad-hidden {
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-  }
+.piccontainer#mainpicture3 {
+      display: none;}
+.piccontainer#ipad-hidden {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
 
   /* PRODUCT */
   .container {
